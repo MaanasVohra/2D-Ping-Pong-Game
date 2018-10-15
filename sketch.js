@@ -63,10 +63,12 @@ function update() {
     else {
       shouldUpdate = false;
       if(player1Score == maxScore ) {
-        alert("Player 1 Wins!");
+        var person = prompt("Player 1 wins, enter name", "Enter name");
+        alert(person + " wins!");
       }
       else {
-        alert("Player 2 Wins!");
+        var person = prompt("Player 2 wins, enter name", "Enter name");
+        alert(person + " wins!");
       }
     }
   }
