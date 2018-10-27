@@ -20,10 +20,10 @@ let scoreSound = null;
 let shouldUpdate = true;
 
 function checkForBallCollisions(barPlayer1, barPlayer2, ball) { // check for collisions with bar
-  if(barPlayer1.x + barPlayer1.width >=  ball.x + ball.xSpeed && barPlayer1.y <= ball.y && barPlayer1.y + barPlayer1.length >= ball.y) { // check for collision with the first bar
+  if(barPlayer1.x + barPlayer1.width >=  ball.x + ball.xSpeed && barPlayer1.y <= ball.y + ball.length && barPlayer1.y + barPlayer1.length >= ball.y) { // check for collision with the first bar
     ball.xSpeed = ball.xSpeed * (-1);
   }
-  if(barPlayer2.x <= ball.x + ball.length + ball.xSpeed && barPlayer2.y <= ball.y && barPlayer2.y + barPlayer2.length >= ball.y) {
+  if(barPlayer2.x <= ball.x + ball.length + ball.xSpeed && barPlayer2.y <= ball.y + ball.length && barPlayer2.y + barPlayer2.length >= ball.y) {
     ball.xSpeed = ball.xSpeed * (-1);
   }
 }
