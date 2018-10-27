@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  background-color: grey;
+  background-color: rgb(94, 94, 94);
   margin: 0;
   display: flex;
 
